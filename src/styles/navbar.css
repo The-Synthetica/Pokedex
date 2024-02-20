@@ -1,0 +1,111 @@
+
+.navbar{
+    width: 100%;
+    
+    padding: 40px 0;
+    text-align: center;
+}
+
+.searchcont{
+    width: 100%;
+    position: relative;
+}
+
+.searchbar{
+    text-align: center;
+    padding: 5px;
+    margin: 0 20px;
+    border-radius: 20px;
+}
+
+.searchbutton{
+    text-align: center;
+    height: 100%;
+    aspect-ratio: 1/1;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+
+input[type=checkbox]{
+    display: none;
+}
+
+.isCheked{
+    translate: 0 -2px;
+    box-shadow: #0f0f0f inset 0px 0px 5px 2px !important;
+    /* background-color: hsla(0, 100%, 50%, 0); */
+    color: black !important;
+    transition: 0.125s ease-in-out;
+}
+
+.filters > li > label{
+    display: block;
+    padding: 7px;
+}
+
+.filters > li{
+    display: inline;
+
+    min-width: 70px;
+    text-align: center;
+    margin: 2px;
+
+    position: relative;
+
+    font-family: "Press Start 2P", monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+
+    color: white;
+    
+    border: solid 2px black;
+    box-shadow: 2px 2px 5px 1px black;
+
+    
+    transition: 0.125s ease-in-out;
+}
+
+.filters > li:hover{
+    translate: 0 -2px;
+    box-shadow: 3px 3px 5px 1px black;
+    transition: 0.125s ease-in-out;
+}
+
+.filters{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    position: relative;
+    padding: 20px 100px;
+}
+
+
+@media screen and (width < 769px) {
+    
+    .filters{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 10px;
+        padding: 20px;
+    }
+        
+    .filters > li{
+        font-size: 7px;
+        min-width: 20px;
+    }
+
+    .searchbar{
+        width: 60%;
+    }
+    
+    .searchbutton{
+        text-align: center;
+        height: 100%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+    }
+  }
